@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EXAM-CLOCK</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Title -->
+        <div class="title">
+            <h1>EXAM-CLOCK</h1>
+            <!-- Description-->
+            <p>
+                Bienvenue dans EXAM-CLOCK, un timer permettant de définir votre
+                temps d'examen et de l'adapter en fonction de vos besoin
+            </p>
+        </div>
+        <br />
+        <!--Form to define time and duration-->
+        <div class="container">
+            <div class="form">
+                <span>Entrez l'heure de début de l'examen</span>
+                <br />
+
+                <br />
+                <input type="time" name="time" id="timesetup" />
+                <br />
+
+                <label for="duration">Entrez la durée de l'examen</label>
+                <br />
+                <input
+                    type="number"
+                    name="DurationHours"
+                    id="DurationHours"
+                    max="24"
+                />
+                <input
+                    type="number"
+                    name="DurationMinutes"
+                    id="DurationMinutes"
+                    max="60"
+                />
+                <br />
+                <select name="typeofexam" id="typeofexam">
+                    <option value="0">Choisissez le type d'examen</option>
+                    <option value="1">Contrôle surprise</option>
+                    <option value="2">Devoir surveillé</option>
+                    <option value="2">Examen blanc</option>
+                    <option value="3">Examen officiel</option>
+
+                </select>
+                <br />
+                <label for="calculatrice">La calculatrice est-elle autorisée ?</label>
+                <input type="checkbox" name="calculatrice" id="calculatrice" />
+                <br />
+                <label for="notes">Les notes sont-elles autorisées ?</label>
+                <input type="checkbox" name="notes" id="notes" />
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
