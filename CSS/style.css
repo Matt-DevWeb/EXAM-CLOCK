@@ -7,6 +7,9 @@
         sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-image: url('../mur-horloge.jpg');
     background-size: cover;
@@ -46,4 +49,45 @@ body {
 }
 .container {
     font-size: 16px;
+}
+
+input,
+select {
+    cursor: pointer;
+}
+#timesetup,
+#DurationHours,
+#DurationMinutes {
+    width: 4.2rem;
+    margin: 5px 0px;
+}
+#typeofexam {
+    width: 100%;
+    margin: 5px 0px;
+}
+#start {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.form {
+    text-align: center;
+    padding: 10px;
+}
+.form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #45a049;
 }
